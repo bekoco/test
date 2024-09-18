@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulaire d'Inscription - Tournoi</title>
+    <title>Formulaire d'Inscription</title>
     <link rel="stylesheet" href="formulaire_inscription.css" />
   </head>
   <body>
-    <div class="header">
-      <h1>Inscription au Tournoi</h1>
-    </div>
-
     <div class="container">
       <div class="signup-form">
-        <h2>League of Legends - 21/09/2024</h2>
+        <h2>Formulaire d'Inscription</h2>
         <form action="/submit_form" method="POST">
+          <!-- Nouveau menu déroulant pour choisir le jeu -->
+          <div class="form-group">
+            <label for="jeu">Choisissez votre jeu :</label>
+            <select id="jeu" name="jeu" required>
+              <option value="league_of_legends">League of Legends</option>
+              <option value="rocket_league">Rocket League</option>
+              <option value="call_of_duty">Call of Duty</option>
+            </select>
+          </div>
+
           <div class="form-group">
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom" required />

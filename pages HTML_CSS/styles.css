@@ -59,3 +59,101 @@ a {
   text-decoration: none; /* Enlève le soulignement des liens */
   color: inherit; /* Hérite la couleur du texte de l'élément parent */
 }
+
+/* css du décompte des tournois */
+.countdown {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  color: #ffcc00; /* Couleur du texte */
+  background: linear-gradient(to right, #a90a91, #3682b8); /* Dégradé */
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Ombre pour un effet flottant */
+  margin-top: 15px; /* Espace avec le texte du tournoi */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Pour centrer l'élément */
+}
+
+/* css du bouton pour revenir en haut de page */
+#scrollBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(
+    to right,
+    #a90a91,
+    #3682b8
+  ); /* Dégradé similaire */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre pour un effet flottant */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transition douce */
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+#scrollBtn:hover {
+  background: linear-gradient(
+    to right,
+    #3682b8,
+    #a90a91
+  ); /* Inversion du dégradé au survol */
+  transform: scale(1.1); /* Légère agrandissement au survol */
+}
+
+#scrollBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* css message de welcome */
+/* Overlay qui couvre toute la page */
+#welcome-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; /* Très élevé pour couvrir tout le reste */
+}
+
+/* Boîte de dialogue au centre */
+#welcome-popup {
+  background: linear-gradient(to right, #3682b8, #a90a91); /* Dégradé */
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffcc00; /* Couleur du texte */
+  max-width: 500px;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 24px; /* Texte plus grand */
+}
+
+/* Bouton pour fermer la popup */
+#close-popup-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#close-popup-btn:hover {
+  background-color: #ff9900; /* Effet au survol */
+}

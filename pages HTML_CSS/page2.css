@@ -86,3 +86,40 @@ body {
   height: auto;
   border-radius: 15px;
 }
+
+/* css du bouton pour revenir en haut de page */
+#scrollBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(
+    to right,
+    #a90a91,
+    #3682b8
+  ); /* Dégradé similaire */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre pour un effet flottant */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transition douce */
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+#scrollBtn:hover {
+  background: linear-gradient(
+    to right,
+    #3682b8,
+    #a90a91
+  ); /* Inversion du dégradé au survol */
+  transform: scale(1.1); /* Légère agrandissement au survol */
+}
+
+#scrollBtn.show {
+  opacity: 1;
+  visibility: visible;
+}

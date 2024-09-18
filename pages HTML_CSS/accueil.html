@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site Tournois Jeux Vidéo - ESGI 2</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="countdown.js" defer></script>
+    <button onclick="scrollToTop()" id="scrollBtn">⬆️</button>
+    <script src="scrollToTop.js"></script>
+    <script src="welcomeMessage.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -29,6 +33,9 @@
             Tournois du 21/09/2024 <br />19h00 - 23h00
           </span>
           <br />
+          <!-- Compte à rebours en JS -->
+          <span id="countdown-lol" class="countdown"></span>
+          <br />
           <span class="description">
             League of Legends est un jeu de stratégie en temps réel et d'arène
             de combat multijoueur (MOBA) où deux équipes de cinq champions
@@ -50,6 +57,9 @@
           <span class="tournament-info">
             Tournois du 21/09/2024 <br />21h00 - 23h30
           </span>
+          <br />
+          <!-- Compte à rebours en JS -->
+          <span id="countdown-rl" class="countdown"></span>
           <br />
           <span class="description">
             Rocket League est un jeu de sport compétitif où des voitures
@@ -74,6 +84,9 @@
           <span class="tournament-info">
             Tournois du 22/09/2024 <br />14h00 - 17h00
           </span>
+          <br />
+          <!-- Compte à rebours en JS -->
+          <span id="countdown-cod" class="countdown"></span>
           <br />
           <span class="description">
             Call of Duty est une série de jeux de tir à la première personne
