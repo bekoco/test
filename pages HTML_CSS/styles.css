@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #262626;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.box {
+  background: linear-gradient(to right, #3682b8, #a90a91);
+  margin: 10px;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.box p {
+  text-align: center;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.box:hover {
+  box-shadow: 0 4px 8px #a90a91b7; /* Ombre portée plus prononcée */
+  background-color: #0088ff; /* Changement de la couleur de fond */
+  border-color: #007bff; /* Changement de la couleur de bordure */
+  opacity: 0.88; /* Réduction de l'opacité */
+  /* Rotation légère */
+  transform: scale(1.05) rotate(0.5deg);
+}
+
+.box:hover p,
+.box:hover strong {
+  color: #c4e7ff; /* Couleur bleue pour le texte */
+}
+
+a {
+  text-decoration: none; /* Enlève le soulignement des liens */
+  color: inherit; /* Hérite la couleur du texte de l'élément parent */
+}
