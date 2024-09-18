@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #262626;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.bracket-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bracket-section h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.bracket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.round {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.match {
+  background-color: #333;
+  border-radius: 6px;
+  padding: 15px 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #3682b8, #ff0077);
+  border-image-slice: 1;
+}
+
+.match:hover {
+  background-color: #ff0077;
+  transform: scale(1.05);
+}
+
+.team {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 2px solid #3682b8;
+}
+
+.team:first-child {
+  border-bottom: 2px solid #ff0077;
+}
+
+.match.winner .team:first-child {
+  background-color: #ff0077;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .round {
+    flex-direction: column;
+  }
+
+  .match {
+    width: 150px;
+  }
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.center-image img {
+  width: 150px; /* Taille de l'image */
+  height: 125px;
+  border-radius: 15%; /* Bordure ronde */
+  object-fit: cover; /* S'assurer que l'image garde une bonne proportion */
+  border: 3px solid #ff0077; /* Une petite bordure blanche pour la mettre en valeur */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Ajouter une ombre */
+}
